@@ -7,8 +7,6 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-// app.use('/public', express.static(`${process.cwd()}/public`));
-// app.use(express.static(`${process.cwd}/client`));
 
 routes(app);
 
