@@ -1,0 +1,6 @@
+[submodule "weather-app-express"]
+	path = weather-app-express
+	url = https://github.com/Ballista01/weather-app-react-frontend.git
+[submodule "weather-app-react-frontend"]
+	path = weather-app-react-frontend
+	url = https://github.com/Ballista01/weather-app-react-frontend.git

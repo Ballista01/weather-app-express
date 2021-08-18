@@ -4,14 +4,14 @@ const fetch = require('node-fetch');
 const asyncHandler = require('express-async-handler');
 
 module.exports = function (app, database) {
-  app.use(express.static(path.join(__dirname, 'weather-app-express-frontend/build')));
+  app.use(express.static(path.join(__dirname, 'weather-app-react-frontend/build')));
   app.route('/hello').get((req, res) => {
     res.send({ helloMsg: 'Hello World!' });
   });
   app.route('/weather').get((req, res) => {
-    // console.log(`sending react file ${process.cwd()}/weather-app-express-frontend/public/index.html`);
+    // console.log(`sending react file ${process.cwd()}/weather-app-react-frontend/public/index.html`);
     // console.log(`dir: ${__dirname}`);
-    res.sendFile(path.join(__dirname, 'weather-app-express-frontend/build/index.html'));
+    res.sendFile(path.join(__dirname, 'weather-app-react-frontend/build/index.html'));
     // res.redirect('http://localhost:3000');
   });
 
